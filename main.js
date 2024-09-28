@@ -1,12 +1,21 @@
+
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const axios = require('axios');
 const jwt = require('express-jwt');
 const jwksRsa = require('jwks-rsa');
+// how would I write this in the prior format?
+require('dotenv').config();
+
+// Now you can use process.env to access the environment variables
+const geminiApiKey = process.env.GEMINI_API_KEY;
+
 
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
 
 // Auth0 configuration
 const authConfig = {
