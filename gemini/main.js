@@ -1,22 +1,27 @@
-require('dotenv').config({ path: '../config/process' });
+require('dotenv').config({ path: './config/shell' });
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 
- console.log("Got");
+console.log("Outside");
+console.log("API Key:", shell.env.GEMINI_API_KEY);
+console.log("All environment variables:", shell.env);
 
- async function run(params) {
-     console.log("to");
-     console.log("this");
-     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-     console.log("part");
-     const prompt = "Essay on achieving financial literacy via AI.";
-     console.log("of");
-     const result = await model.generateContent(prompt);
-     const response = await model.
-     console.log("the");
-     console.log(result.response.text());
-     console.log("project");
-     console.log("?");
- }
 
- run();
+async function run(params) {
+    const { GoogleGenerativeAI } = require("@google/generative-ai");
+    const genAI = new GoogleGenerativeAI(shell.env.GEMINI_API_KEY);
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    
+    // Define the prompt
+    const prompt = "Essay on achieving financial literacy via AI.";
+    
+    console.log("First problem");
+    
+    try {
+        const result = await model.generateContent(prompt);
+        console.log("Generated Content:", result.response.text());
+    } catch (error) {
+        console.error("Error generating content:", error);
+    }
+}
 
+run();
