@@ -11,21 +11,29 @@
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
             rel="stylesheet"
     />
+<!--    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>-->
+
 </head>
 <body>
 <header class="navbar"></header>
 
 <main>
     <h1>Ever wondered how much money you would had made if you started investing the moment you where born?</h1>
-    <p>Well think no more! If you had started investing a 1,000 dollars in {companyName} on {dob} then your account value would be
-        at {price} right now!</p>
+    <p>
+    Well, think no more! If you had started investing $1,000 in <span id="companyName"></span> on <span id="dob"></span>,
+    your account value would be at <span id="price"></span> right now!
+    </p>
 
-    <div class="stockChart"></div>
+    <canvas id="stockChart" width="400" height="200"></canvas>
+
 </main>
 
 <footer class="footer"></footer>
 
-<script src="header.js"></script>
-<script src="footer.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="/stockChart.js"></script>
+<script src="/header.js"></script>
+<script src="/footer.js"></script>
 </body>
 </html>
