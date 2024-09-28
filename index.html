@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to ChaChingAcademy</title>
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
             rel="stylesheet"
@@ -17,18 +18,45 @@
 
 <section class="hero">
     <div class="hero-overlay"></div>
+
+    <div class="hero-image">
+
+        <div id="carousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/group.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/learning.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/skyscraper.jpeg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
     <div class="hero-content">
         <h1>Master Your Money</h1>
         <p>
             Empowering communities with the tools and knowledge to achieve
             financial freedom.
         </p>
-        <a href="#services" class="btn">Explore Services</a>
+        <a href="services.html" class="btn">Explore Services</a>
     </div>
 </section>
 
 <section class="features">
-    <a href="/financialLiteracy.html" class="feature-box">
+    <a href="financialLiteracy.html" class="feature-box">
         <div class="icon">&#128218;</div>
         <h3>Financial Literacy</h3>
         <p>Learn the basics of managing money, saving, and investing.</p>
@@ -54,7 +82,7 @@
 <footer class="footer">
 
 </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="header.js"></script>
 <script src="footer.js"></script>
 </body>
