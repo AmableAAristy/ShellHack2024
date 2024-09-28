@@ -28,7 +28,7 @@ h2.company {
 }
 
 header#home button {
-  positon: absolute;
+  position: absolute;
   top: 35%;
   left: 50%;
   transform: translateX(-50%);
