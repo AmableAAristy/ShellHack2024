@@ -1,4 +1,4 @@
-require('dotenv').config({ path: './config' });
+require('dotenv').config({ path: '../.env' });
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 console.log("Outside");
