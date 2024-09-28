@@ -1,61 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to ChaChingAcademy</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-            rel="stylesheet"
-    />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
-<header class="navbar"></header>
+<body class="home-page">
+<!-- Header with Navigation Menu -->
+<header class="navbar">
+    <div class="logo"><a href="index.html">ChaChingAcademy</a></div>
+    <nav>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="advisor.html">Find an Advisor</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <a class="cta" href="contact.html">Get Started</a>
+    <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</header>
 
+<!-- Hero Section with Carousel -->
 <section class="hero">
-    <div class="hero-overlay"></div>
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="https://images.unsplash.com/photo-1517242020-8c05d7e2f98e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDl8fGNpdHl8ZW58MHx8fHwxNjEyMTYyNjEw&ixlib=rb-1.2.1&q=80&w=1080" alt="City View">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGZpbmFuY2V8ZW58MHx8fHwxNjEyMTYyNjEw&ixlib=rb-1.2.1&q=80&w=1080" alt="Financial Planning">
+            <img src="https://images.unsplash.com/photo-1556742400-b5d3c0b5f1a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDgxfHxjb21tdW5pdHl8ZW58MHx8fHwxNjEyMTYyNjEw&ixlib=rb-1.2.1&q=80&w=1080" alt="Community Support">
+            <img src="https://images.unsplash.com/photo-1495555961578-49b9ff3d80d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDV8fGNvbGxlZ2V8ZW58MHx8fHwxNjEyMTYyNjEw&ixlib=rb-1.2.1&q=80&w=1080" alt="Learning Together">
+            <img src="https://images.unsplash.com/photo-1516745644484-c1fb320fcd4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDI4fHxtb25leXxlbnwwfHx8fDE2MTIxNjI2MTI&ixlib=rb-1.2.1&q=80&w=1080" alt="Empowerment">
+        </div>
+    </div>
     <div class="hero-content">
         <h1>Master Your Money</h1>
-        <p>
-            Empowering communities with the tools and knowledge to achieve
-            financial freedom.
-        </p>
+        <p>Empowering communities with the tools and knowledge to achieve financial freedom.</p>
         <a href="#services" class="btn">Explore Services</a>
     </div>
 </section>
 
+<!-- Features Section -->
 <section class="features">
-    <a href="/financialLiteracy.html" class="feature-box">
+    <div class="feature-box">
         <div class="icon">&#128218;</div>
         <h3>Financial Literacy</h3>
         <p>Learn the basics of managing money, saving, and investing.</p>
-    </a>
+    </div>
     <div class="feature-box">
         <div class="icon">&#128176;</div>
         <h3>Personalized Guidance</h3>
-        <p>
-            Get tailored advice from financial experts to help you achieve your
-            goals.
-        </p>
+        <p>Get tailored advice from financial experts to help you achieve your goals.</p>
     </div>
     <div class="feature-box">
         <div class="icon">&#129309;</div>
         <h3>Community Support</h3>
-        <p>
-            Join a supportive community of learners who share tips and strategies
-            for financial success.
-        </p>
+        <p>Join a supportive community of learners who share tips and strategies for financial success.</p>
     </div>
 </section>
-
-<footer class="footer">
-
+<!-- Footer Section -->
+<footer>
+    <div class="social-media">
+        <a href="#"><img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/x.png" alt="X (formerly Twitter)"></a>
+        <a href="#"><img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram"></a>
+    </div>
+    <p>&copy; 2024 ChaChingAcademy. Empowering communities through financial education.</p>
 </footer>
 
-<script src="header.js"></script>
-<script src="footer.js"></script>
+<!-- JavaScript for Carousel and Hamburger Menu -->
+<script src="script.js"></script>
 </body>
 </html>
