@@ -7,9 +7,9 @@ header.innerHTML = `
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="#services">Our Services</a></li>
-            <li><a href="#advisor">Find an Advisor</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="advisor.html">Find an Advisor</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
     <a class="cta" href="#contact">Get Started</a>
