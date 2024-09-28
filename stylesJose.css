@@ -1,0 +1,35 @@
+body {
+  background-color: grey;
+}
+
+header#home {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px rgb(80, 0, 0);
+}
+
+header#home.img {
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+h2.company {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  z-index: 1;
+  /* text-align: center; */
+}
+
+header#home button {
+  positon: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
