@@ -1,14 +1,12 @@
-require('dotenv').config({ path: './config/shell' });
+require('dotenv').config({ path: './config' });
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 console.log("Outside");
-console.log("API Key:", shell.env.GEMINI_API_KEY);
-console.log("All environment variables:", shell.env);
-
+console.log("API Key:", process.env.GEMINI_API_KEY);
 
 async function run(params) {
     const { GoogleGenerativeAI } = require("@google/generative-ai");
-    const genAI = new GoogleGenerativeAI(shell.env.GEMINI_API_KEY);
+    const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     
     // Define the prompt
