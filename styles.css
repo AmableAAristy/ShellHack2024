@@ -213,6 +213,16 @@ footer {
   transform: scale(1.2);
 }
 
+
+section a {
+  text-decoration: none; /* Removes underline from all links inside the section */
+  color: inherit; /* Ensures the text color matches the surrounding content */
+}
+
+section a:hover {
+  text-decoration: underline; /* Optional: Add underline on hover for clarity */
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .nav-links {

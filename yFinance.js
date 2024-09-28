@@ -6,10 +6,10 @@ async function getData() {
 
         const endDate = new Date();
         const startDate = new Date();
-        startDate.setDate(endDate.getDate() - 365);
+        startDate.setDate(endDate.getDate() - 7);
 
 
-        const data = await yahooFinance.chart('AMD', {
+        const data = await yahooFinance.chart('STFGX', {
             period1: startDate.toISOString().split('T')[0],
             period2: endDate.toISOString().split('T')[0],
             interval: '1d'
