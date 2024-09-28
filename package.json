@@ -1,0 +1,16 @@
+{
+	"name": "service1",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+	  "start": "exec node main.js"
+	},
+	"dependencies": {
+	  "express": "^4.17.1",
+	  "body-parser": "^1.19.0",
+	  "axios": "^0.21.1",
+	  "express-jwt": "^6.0.0",
+	  "jwks-rsa": "^2.0.5"
+	}
+}
