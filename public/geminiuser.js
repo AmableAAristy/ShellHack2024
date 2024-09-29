@@ -38,13 +38,13 @@ submitButton.addEventListener("click", async function(event) {
         } else {
             const errorDiv = document.createElement("div");
             errorDiv.textContent = "Error generating content.";
-            errorDiv.classList.add("error-message");  // Add a class for styling error
+            errorDiv.classList.add("error-message");  
             inputHistoryDiv.appendChild(errorDiv);
         }
     } catch (error) {
         const errorDiv = document.createElement("div");
         errorDiv.textContent = "Error: " + error.message;
-        errorDiv.classList.add("error-message");  // Add a class for styling error
+        errorDiv.classList.add("error-message");  
         inputHistoryDiv.appendChild(errorDiv);
     }
 });
