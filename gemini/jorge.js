@@ -1,8 +1,7 @@
 require('dotenv').config({ path: '.env' });
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-console.log("Outside");
-console.log("API Key:", process.env.GEMINI_API_KEY);
+console.log("Jorge js being called");
 
 async function run(params, prompt) {
     const { GoogleGenerativeAI } = require("@google/generative-ai");
