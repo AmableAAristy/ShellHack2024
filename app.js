@@ -5,7 +5,7 @@ const stockDataRoute = require('./routes/stockData');
 const app = express();
 const port = 3000;
 
-// Serve static files like financialLiteracy.html
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 
