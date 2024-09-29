@@ -2,7 +2,7 @@ const header = document.getElementsByClassName("navbar")[0];
 
 
 header.innerHTML = `
-    <div class="logo">ChaChingAcademy</div>
+    <a href="about.html" class="logo">ChaChingAcademy</a>
     <nav>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
