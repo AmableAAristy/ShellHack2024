@@ -12,7 +12,7 @@ header.innerHTML = `
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
-    <a class="cta" href="#contact">Get Started</a>
+    <a class="cta" href="getStarted.html">Get Started</a>
     <div class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>

@@ -1574,3 +1574,324 @@ body {
     height: 250px;
   }
 }
+
+/* Community Hero Section */
+.community-hero {
+  width: 100%;
+  height: 60vh;
+  background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216'); /* Replace with relevant community image URL */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.community-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 77, 64, 0.7); /* Dark overlay */
+  z-index: 0;
+}
+
+.community-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.community-hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.community-hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Financial Education Section */
+.financial-education {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.financial-education h2 {
+  font-size: 2.5em;
+  color: #004d40;
+  margin-bottom: 20px;
+}
+
+.financial-education p {
+  font-size: 1.1em;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.education-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.education-images img {
+  width: 45%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Community Support Section */
+.community-support {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.community-support h2 {
+  font-size: 2.5em;
+  color: #004d40;
+  margin-bottom: 20px;
+}
+
+.community-support p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.support-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.support-images img {
+  width: 45%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Financial Success Section */
+.financial-success {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.financial-success h2 {
+  font-size: 2.5em;
+  color: #004d40;
+  margin-bottom: 20px;
+}
+
+.financial-success p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Responsive Styles for Community Sections */
+@media (max-width: 768px) {
+  .community-hero h1 {
+    font-size: 2.5em;
+  }
+
+  .community-hero p {
+    font-size: 1em;
+  }
+
+  .education-images,
+  .support-images {
+    flex-direction: column;
+  }
+
+  .education-images img,
+  .support-images img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .community-hero h1 {
+    font-size: 2em;
+  }
+
+  .community-hero p {
+    font-size: 0.9em;
+  }
+  
+  .financial-education h2,
+  .community-support h2,
+  .financial-success h2 {
+    font-size: 2em;
+  }
+
+  .financial-education p,
+  .community-support p,
+  .financial-success p {
+    font-size: 0.9em;
+  }
+
+  .education-images img,
+  .support-images img {
+    width: 100%;
+  }
+}
+
+/* Login Page Styles */
+.login-page {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Login Hero Section */
+.login-hero {
+  width: 100%;
+  height: 40vh;
+  background-image: url('https://images.unsplash.com/photo-1556741533-f6acd647b229');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+
+.login-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 77, 64, 0.7); /* Dark overlay */
+  z-index: 0;
+}
+
+.login-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.login-hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.login-hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Login Form Section */
+.login-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  width: 100%;
+}
+
+.login-container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-form .form-group {
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #333;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #004d40;
+  box-shadow: 0 0 5px rgba(0, 77, 64, 0.5);
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #004d40;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #00362f;
+}
+
+/* Login Footer */
+.login-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login-footer a {
+  color: #004d40;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 500px) {
+  .login-container {
+      width: 90%;
+  }
+
+  .login-hero h1 {
+      font-size: 2.5em;
+  }
+
+  .login-hero p {
+      font-size: 1em;
+  }
+}
+
+
