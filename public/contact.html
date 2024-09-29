@@ -1,39 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ChaChingAcademy - Page Title</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-            rel="stylesheet"
-    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | ChaChingAcademy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
-<header class="navbar"></header>
+<body class="contact-page">
+    <!-- Header -->
+    <header class="navbar"></header>
 
-<main>
-    <section class="contact-header">
-        <h1>Contact Us!</h1>
+    <!-- Main Contact Section -->
+    <section class="contact">
+        <div class="contact-header">
+            <h1>Contact Us</h1>
+            <p>We're here to assist you with any questions or concerns you may have. Choose the best way to get in touch with us.</p>
+        </div>
+        
+        <div class="contact-methods">
+            <!-- Phone Support -->
+            <div class="contact-method">
+                <h2>Phone Support</h2>
+                <p>Need immediate assistance? Give us a call!</p>
+                <div class="contact-detail">
+                    <img src="https://img.icons8.com/ios-filled/50/004d40/phone.png" alt="Phone Icon">
+                    <p><strong>Phone:</strong> <a href="tel:+1234567890">(123) 456-7890</a></p>
+                </div>
+                <p class="hours">Available Mon-Fri, 9am - 5pm</p>
+            </div>
+
+            <!-- Email Support -->
+            <div class="contact-method">
+                <h2>Email Support</h2>
+                <p>Have a question or concern? Send us an email and we'll get back to you as soon as possible.</p>
+                <div class="contact-detail">
+                    <img src="https://img.icons8.com/ios-filled/50/004d40/email.png" alt="Email Icon">
+                    <p><strong>Email:</strong> <a href="mailto:support@chachingacademy.com">support@chachingacademy.com</a></p>
+                </div>
+                <p class="hours">We'll respond within 1-2 business days</p>
+            </div>
+
+            <!-- Live Chat Support -->
+            <div class="contact-method">
+                <h2>Live Chat</h2>
+                <p>Chat with one of our support agents for quick assistance.</p>
+                <div class="contact-detail">
+                    <img src="https://img.icons8.com/ios-filled/50/004d40/chat.png" alt="Chat Icon">
+                    <p><strong>Chat:</strong> <a href="#">Start Live Chat</a></p>
+                </div>
+                <p class="hours">Available Mon-Fri, 9am - 5pm</p>
+            </div>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div class="contact-form-container">
+            <h2>Send Us a Message</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name.." required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email.." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject.." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." style="height:150px" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
     </section>
 
-    <section class="contact-info">
+    <!-- Footer -->
+    <footer class="footer"></footer>
 
-<!--        list contact info below...-->
-<!--        emails, numbers, all that stuff-->
-
-    </section>
-
-
-
-</main>
-
-<footer class="footer"></footer>
-
-<script src="header.js"></script>
-<script src="footer.js"></script>
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
