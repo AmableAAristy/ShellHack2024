@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ChaChingAcademy - Page Title</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-            rel="stylesheet"
-    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find an Advisor | ChaChingAcademy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
-<header class="navbar"></header>
+<body class="advisor-page">
+    <!-- Header -->
+    <header class="navbar"></header>
 
-<main>
-
-    <section class="advisor-header">
-        <h1>Advisors</h1>
-        <h4>Here at ChaChingAcademy we offer advisors with a varity of options</h4>
+    <!-- Find an Advisor Section -->
+    <section class="advisor">
+        <div class="advisor-header">
+            <h1>Find an Advisor</h1>
+            <p>We connect you with experienced financial advisors who can help you achieve your financial goals. Browse our advisors below:</p>
+        </div>
+        <div class="advisor-container">
+            <div class="advisor-card">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Advisor 1">
+                <h3>Jane Doe</h3>
+                <p>Specialist in Financial Planning & Wealth Management</p>
+                <button class="btn">Contact</button>
+            </div>
+            <div class="advisor-card">
+                <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Advisor 2">
+                <h3>John Smith</h3>
+                <p>Expert in Investment Strategies & Retirement Planning</p>
+                <button class="btn">Contact</button>
+            </div>
+            <div class="advisor-card">
+                <img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Advisor 3">
+                <h3>Mary Johnson</h3>
+                <p>Specialist in Tax Strategies & Business Advisory</p>
+                <button class="btn">Contact</button>
+            </div>
+        </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="footer"></footer>
 
-
-    <!-- add image in here -->
-
-    <!-- <p>Welcome to ChaChingAcademy!</p> -->
-</main>
-
-<footer class="footer"></footer>
-
-<script src="header.js"></script>
-<script src="footer.js"></script>
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
