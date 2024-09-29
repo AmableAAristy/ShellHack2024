@@ -1,74 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ChaChingAcademy - Page Title</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Insights | ChaChingAcademy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="investment-page">
+    <!-- Header -->
     <header class="navbar"></header>
 
-    <main>
-      <h1>
-        Ever wondered how much money you would have made if you started
-        investing the moment you where born?
-      </h1>
-      <p>
-        Well, think no more! If you had started investing $1,000 in
-        <span id="companyName"></span> on <span id="dob"></span>, your account
-        value would be at <span id="price"></span> right now! That is a
-        <span id="gainPercentage"></span> increase!
-      </p>
-      <div class="canvas-container">
-        <canvas id="stockChart"></canvas>
-      </div>
+    <!-- Hero Section -->
+    <section class="investment-hero">
+        <div class="investment-hero-content">
+            <h1>Investment Insights</h1>
+            <p>Discover the potential of your investments. Calculate your returns and learn the fundamentals of stock investments to build a brighter financial future.</p>
+        </div>
+    </section>
 
-      <h2>
-        Stocks are a way to own a piece of a company. When you buy a stock,
-        you're buying a share of that business. There are two main types: common
-        and preferred stocks. You don’t need to be an expert to get started,
-        just knowing that stocks can help build wealth over time is enough to
-        begin your journey. It’s all about growing your money as the company
-        grows, and a little bit of understanding goes a long way.
-      </h2>
-      <p>
-        Stocks represent ownership in a company, and when you purchase a stock,
-        you are essentially buying a small piece of that company. It’s important
-        to understand that there are two main types of stocks: common and
-        preferred. Common stocks give you voting rights and the potential for
-        dividends and capital appreciation, while preferred stocks typically
-        offer fixed dividends but no voting rights. Stocks are one of the most
-        accessible ways for everyday individuals to grow their wealth over time,
-        and understanding how they work is the first step toward making smart
-        investment choices.
-      </p>
+    <!-- Main Content -->
+    <main class="investment-content">
+        <section class="investment-calculator">
+            <h2>Calculate Your Investment Growth</h2>
+            <p>
+                Ever wondered how much money you would have made if you started investing the moment you were born? Use our calculator below to find out!
+            </p>
+            <div class="calculator-container">
+                <p>
+                    If you had started investing $1,000 in <span id="companyName"></span> on <span id="dob"></span>, your account value would be at <span id="price"></span> right now! That's a <span id="gainPercentage"></span> increase!
+                </p>
+                <div class="canvas-container">
+                    <canvas id="stockChart"></canvas>
+                </div>
+            </div>
+        </section>
 
-      <h4>Why it matters to you?</h4>
-      <p>
-        For minority communities, investing is more than just building personal
-        wealth—it’s about breaking barriers. Financial independence is something
-        that has historically been hard to achieve for many minorities, but
-        learning how to invest can help change that. By investing, we can start
-        closing the wealth gap and creating opportunities for ourselves and
-        future generations. You don’t need to have a lot of money to start, just
-        the willingness to learn and take small steps toward a brighter
-        financial future.
-      </p>
+        <section class="investment-education">
+            <h2>Understanding Stocks</h2>
+            <p>
+                Stocks are a way to own a piece of a company. When you buy a stock, you're buying a share of that business. There are two main types: common and preferred stocks. You don’t need to be an expert to get started, just knowing that stocks can help build wealth over time is enough to begin your journey. It’s all about growing your money as the company grows, and a little bit of understanding goes a long way.
+            </p>
+            <p>
+                Stocks represent ownership in a company, and when you purchase a stock, you are essentially buying a small piece of that company. It’s important to understand that there are two main types of stocks: common and preferred. Common stocks give you voting rights and the potential for dividends and capital appreciation, while preferred stocks typically offer fixed dividends but no voting rights. Stocks are one of the most accessible ways for everyday individuals to grow their wealth over time, and understanding how they work is the first step toward making smart investment choices.
+            </p>
+        </section>
+
+        <section class="investment-impact">
+            <h2>Why It Matters to You</h2>
+            <p>
+                For minority communities, investing is more than just building personal wealth—it’s about breaking barriers. Financial independence is something that has historically been hard to achieve for many minorities, but learning how to invest can help change that. By investing, we can start closing the wealth gap and creating opportunities for ourselves and future generations. You don’t need to have a lot of money to start, just the willingness to learn and take small steps toward a brighter financial future.
+            </p>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer"></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <script src="/stockData.js"></script>
-    <script src="/header.js"></script>
-    <script src="/footer.js"></script>
-  </body>
+    <script src="stockData.js"></script>
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+</body>
 </html>
