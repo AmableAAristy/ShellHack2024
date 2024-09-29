@@ -945,160 +945,6 @@ body {
   }
 }
 
-/* About Us Page Styles */
-.about-page {
-  /* padding: 40px 0; */
-  background-color: #f9f9f9;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-}
-
-.about-page h1 {
-  font-size: 3em;
-  color: #004d40;
-  margin-bottom: 30px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.about-page p {
-  font-size: 1.2em;
-  color: #555;
-  margin-bottom: 50px;
-  line-height: 1.8;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.about-content {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 40px;
-}
-
-.about-section {
-  background: #fff;
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  width: 60%;
-  margin: 0 auto 80px auto; /* Increased bottom margin for spacing */
-  text-align: center;
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.about-team {
-  margin-top: 80px; /* Add space between "Our Mission" and "Meet Our Team" */
-  margin-bottom: 60px; /* Additional space between team and the next section */
-}
-
-.team-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 40px;
-}
-
-.team-member {
-  background: #fff;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  flex: 1;
-  max-width: 30%;
-  min-width: 250px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.team-member:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-}
-
-.team-member img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 15px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.team-member h3 {
-  color: #004d40;
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.team-member p {
-  font-size: 1em;
-  color: #777;
-  margin-bottom: 10px;
-}
-
-/* Core Values Section */
-.about-values {
-  margin-top: 100px;  /* Increased space between Meet Our Team and Core Values */
-  margin-bottom: 100px;  /* Space between Core Values and Footer */
-}
-
-.about-values h2 {
-  font-size: 2em;
-  color: #004d40;
-  margin-bottom: 30px;
-}
-
-.about-values ul {
-  list-style: none;
-  padding-left: 0;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.about-values li {
-  font-size: 1.2em;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-@media (max-width: 768px) {
-  .team-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .team-member {
-    width: 80%;
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 500px) {
-  .about-section,
-  .team-member {
-    width: 100%;
-  }
-
-  .about-page h1 {
-    font-size: 2.5em;
-  }
-
-  .about-page p {
-    font-size: 1.1em;
-  }
-}
-
-
 /* General Styles */
 * {
   margin: 0;
@@ -1115,11 +961,285 @@ body {
   align-items: center;
 }
 
+/* Navbar Styles */
+.navbar {
+  width: 100%;
+  background-color: #004d40;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 50px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffa726;
+}
+
+/* CTA Button */
+.cta {
+  background-color: #ffa726;
+  color: #004d40;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #e68900;
+  transform: translateY(-3px);
+}
+
+/* Hero Section */
+.about-hero {
+  width: 100%;
+  height: 60vh;
+  background-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0'); /* Change to a suitable image URL */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 77, 64, 0.7); /* Dark overlay */
+  z-index: 0;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.about-hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.about-hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Main About Us Section */
+.about {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.about-mission,
+.about-team,
+.about-values {
+  background: #f9f9f9;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  text-align: left;
+}
+
+.about-mission h2,
+.about-team h2,
+.about-values h2 {
+  color: #004d40;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about-mission p,
+.about-values p,
+.about-values ul {
+  color: #555;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.team-member {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  color: #004d40;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 1em;
+  color: #777;
+}
+
+.about-values ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-values li {
+  margin-bottom: 15px;
+}
+
+.about-values strong {
+  color: #004d40;
+}
+
+/* Footer Styles */
+.footer {
+  font-size: 0.9em;
+  color: #777;
+  background-color: #004d40;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .about-mission,
+  .about-team,
+  .about-values {
+    width: 90%;
+  }
+
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-mission,
+  .about-team,
+  .about-values {
+    width: 100%;
+  }
+
+  .team-member {
+    width: 100%;
+  }
+
+  .about-hero h1 {
+    font-size: 2em;
+  }
+
+  .about-hero p {
+    font-size: 0.9em;
+  }
+}
+
+
 /* Services Page Hero Section */
 .services-hero {
   width: 100%;
   height: 60vh;
-  background-image: url("https://images.unsplash.com/photo-1505685296765-3a2736de412f");
+  background-image: url("img/money.thrown.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -1238,5 +1358,163 @@ body {
 
   .services-hero p {
     font-size: 0.9em;
+  }
+}
+/* Investment Insights Page Styles */
+.investment-page {
+  /* padding: 80px 0; */
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.investment-hero {
+  width: 100%;
+  height: 60vh;
+  background-image: url("img/stockBull.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.investment-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 77, 64, 0.7); /* Dark overlay */
+  z-index: 0;
+}
+
+.investment-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.investment-hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.investment-hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Investment Calculator Section */
+.investment-content {
+  padding: 60px 20px;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.investment-calculator {
+  margin-bottom: 50px;
+}
+
+.investment-calculator h2 {
+  font-size: 2.5em;
+  color: #004d40;
+  margin-bottom: 20px;
+}
+
+.investment-calculator p {
+  font-size: 1.2em;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.calculator-container {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+#stockChart {
+  width: 90%;
+  height: 400px;
+  margin: 0 auto;
+}
+
+/* Investment Education Section */
+.investment-education h2 {
+  font-size: 2em;
+  color: #004d40;
+  margin-bottom: 20px;
+}
+
+.investment-education p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Investment Impact Section */
+.investment-impact h2 {
+  font-size: 2em;
+  color: #004d40;
+  margin-bottom: 20px;
+}
+
+.investment-impact p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .investment-hero h1 {
+    font-size: 2.5em;
+  }
+
+  .investment-hero p {
+    font-size: 1em;
+  }
+
+  .calculator-container {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  #stockChart {
+    height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .investment-hero h1 {
+    font-size: 2em;
+  }
+
+  .investment-hero p {
+    font-size: 0.9em;
+  }
+
+  .investment-content {
+    padding: 20px;
+  }
+
+  .calculator-container {
+    width: 100%;
+  }
+
+  #stockChart {
+    height: 250px;
   }
 }
