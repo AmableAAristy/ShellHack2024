@@ -46,5 +46,7 @@ submitButton.addEventListener("click", async function(event) {
         errorDiv.textContent = "Error: " + error.message;
         errorDiv.classList.add("error-message");  
         inputHistoryDiv.appendChild(errorDiv);
+    } finally {
+        inputHistoryDiv.scrollTop = inputHistoryDiv.scrollHeight;
     }
 });

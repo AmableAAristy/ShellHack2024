@@ -651,6 +651,51 @@ section a:hover {
   transform: translateY(-3px);
 }
 
+.gemini-response-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  overflow-y: auto;
+  height: 400px;
+}
+
+#input-history {
+  width: 100%;
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.user-message, .ai-response, .error-message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.user-message {
+  background-color: #e0f7fa;
+  color: #004d40;
+  font-weight: bold;
+}
+
+.ai-response {
+  background-color: #f1f8e9;
+  color: #33691e;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .advisor-card {
