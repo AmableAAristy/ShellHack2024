@@ -1,6 +1,6 @@
 async function fetchStockData() {
-     const symbol = 'STFGX'; // Example symbol
-     const dob = '2024-08-12';
+     const symbol = 'VOO'; // Example symbol
+     const dob = '2023-08-25';
 
 
     //
