@@ -224,13 +224,23 @@ footer {
 
 
 section a {
-  text-decoration: none; /* Removes underline from all links inside the section */
-  color: inherit; /* Ensures the text color matches the surrounding content */
+  text-decoration: none; 
+  color: inherit; 
 }
 
 section a:hover {
-  text-decoration: underline; /* Optional: Add underline on hover for clarity */
+  text-decoration: underline;
 }
+
+.canvas-container {
+  width: 100%; 
+  height: 60vh; 
+}
+#stockChart {
+  width: 90%;
+  height: 100%;
+}
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
