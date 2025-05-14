@@ -6,7 +6,7 @@ Our inspiration:
 
 As a group, we realized that we were not fully prepared to understand credit cards, 
 investing, and other financial responsibilities. We felt that school did not provide 
-enough detail during high school, and we wanted to help people like us avoid having 
+enough detail, and we wanted to help people like us avoid having 
 those same issues. So we decided to build a website looking to provide services to 
 high school and college minorities to equip them with knowledge and tools to achieve 
 a better future.
